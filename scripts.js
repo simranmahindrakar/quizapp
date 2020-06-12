@@ -55,14 +55,14 @@ function selectAnswer(e) {      //takes the click event as input parameter
     Array.from(answerElement.children).forEach(button => {
         setStatusClass(button, button.dataset.corect);  
     })
-    if(shuffleQuestions.length>currenntQI + 1)  //we have more questions
+    if(shuffleQuestions.length> currenntQI + 1)  //we have more questions
         {   nextButton.classList.remove('hide');
             }
     else {
         startButton.innerText = 'Restart';
 
         startButton.classList.remove('hide');   //show this button if quiz is over
-        
+
     }
 }
 
@@ -95,5 +95,68 @@ const questions =[
         answers : [
             {text: '1st July', correct : true},
             {text: 'IDK' , correct : false} ]
-    }
+    },
+    {
+        question: "Was Bangladesh once part of India?",
+        answers: [
+            {text: 'Yes' , correct : true},
+            {text: 'No', correct : false}
+        ]
+    },
+    {
+        question: 'Rajasthan was once made up of several countries',
+        answers: [
+            {text:'Yes' , correct: true},
+            {text: 'No' , correct: false}
+        ]
+    },
+    {
+        question: "Who is India's first female president?",
+        answers: [
+            {text: 'Indira Gandhi' , correct: false },
+            {text: 'Pratibha Patil' , correct: true}
+        ]    
+    },
+    {
+        question: "Who was the first Home Minister of India?",
+        answers: [
+            {text: 'Rajendra Prasad' , correct : false},
+            {text: 'Sardar Vallabhbhai Patel' , correct: true}
+        ]
+    },
+    {
+        question: "Shubh wants Simran to watch which show?",
+        answer: [
+            {text: 'Elite', correct: false},
+            {text: 'The Last Dance' , correct: true}
+        ]
+    },
+
+    {
+        question: "Who was the Prime Minister of Britain when India became independent in August,1947?",
+        answers :[
+            {text: 'Winston Churchill' , correct: false},
+            {text: 'Clement Atlee', correct: true}
+        ]
+    },
+    {
+        question: "Shampooing is an Indian concept.",
+        answers :[
+            {text: 'True' , correct: true},
+            {text: 'False', correct: false}
+        ]
+    },
+
+    {
+        question: "In India a special polling booth is set up for a lone voter in the middle of Gir Forest.",
+        answers :[
+            {text: 'True' , correct: true},
+            {text: ' False', correct: false}
+        ]
+    },
+
+
+
+
+
 ];
